@@ -70,7 +70,7 @@ const QuizResult = () => {
     }, [])
     return (
         <>
-            <div>
+            <div className='select-none' >
                 {
                     result && result.map((item, i) => {
                         return (
@@ -118,12 +118,13 @@ const QuizResult = () => {
                     className='text-white animate__animated animate__slideInLeft '
                     style={{
                         position: 'sticky',
-                        backgroundColor: '#398ab9',
+                        backgroundColor: 'orange',
                         bottom: 0,
                         right: '95vw',
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center'
+                        alignItems: 'center',
+                        color:'black'
                     }}
                     icon={<HomeOutlined />}
                     onClick={() => {

@@ -14,6 +14,7 @@ const Quiz = () => {
     const navigate = useNavigate();
     const confirm = (saveAnswersFunc, unAnsweredQuestions) => {
         modal.confirm({
+            style: { userSelect: 'none' },
             direction: 'rtl',
             title: 'تنبيه',
             icon: <ExclamationCircleOutlined />,
@@ -68,6 +69,7 @@ const Quiz = () => {
                 form={form}
                 layout="vertical"
                 onFinish={handleFinish}
+                className='select-none'
 
             >
                 <div>
@@ -118,15 +120,16 @@ const Quiz = () => {
                         type='primary'
                         shape='circle'
                         htmlType='submit'
-                        className='text-white animate__animated animate__slideInLeft'
+                        className='animate__animated animate__slideInLeft'
                         style={{
                             position: 'sticky',
-                            backgroundColor: '#398ab9',
+                            backgroundColor: 'orange',
+                            color: 'black',
                             bottom: 0,
                             right: '95vw',
                             display: 'flex',
                             justifyContent: 'center',
-                            alignItems: 'center'
+                            alignItems: 'center',
                         }}
                         icon={<AiOutlineCheckCircle size={30} />}
                     />

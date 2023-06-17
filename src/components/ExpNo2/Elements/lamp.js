@@ -1,6 +1,5 @@
 import { Image } from 'antd';
 import { drag } from 'd3-drag';
-import '../../../style/led.css';
 import { select } from 'd3-selection';
 import { GlobalStore } from '../../../store';
 import styles from '../../../style/style.module.css';

@@ -1,42 +1,19 @@
 import React from "react"
-import { Button } from 'antd';
-import bgCover from "../assets/bg-cover.jpg";
-import logo from "../assets/logo.svg";
+import logo from "../assets/dark-logo.png";
 import { useNavigate } from "react-router-dom";
-const styles = {
-    background: `url(${bgCover}) no-repeat center center`,
-    backgroundSize: 'cover',
-    height: '100vh',
-};
 
 function About() {
     const navigate = useNavigate();
     return (
-
         <>
-            <div style={styles} className="flex flex-col items-center justify-center bg-cover bg-center  h-screen ">
-                <div 
-                className="flex justify-start items-center w-screen"
-                style={{background: 'rgba(0,0,0,0.4)'}}>
-                    <img src={logo} alt="" height={150} width={150} />
-                    <div>
-                        <span className="font-semibold" style={{ fontSize: '70px' }} >E</span>
-                        <span className="font-medium" style={{ fontSize: '55px' }} >lectrical</span>
-                        <span className="font-semibold" style={{ fontSize: '70px' }} >C</span>
-                        <span className="font-medium" style={{ fontSize: '55px' }} >ircuit</span>
-                        <span className="font-semibold" style={{ fontSize: '70px' }} >S</span>
-                        <span className="font-medium" style={{ fontSize: '55px' }} >imulator</span>
-                    </div>
+            <div className="flex flex-col items-center justify-center h-screen select-none ">
+                <div className=" lg:block hidden absolute left-0 right-0 h-40 " style={{ background: 'rgba(241, 241, 242,0.5)' }} ></div>
+                <div className="absolute top-0 bottom-0 lg:top-auto lg:bottom-auto left-0 right-0 flex lg:flex-row flex-col justify-center lg:justify-start items-center lg:px-5 gap-5" >
+                    <img onClick={() => navigate("/home")} className=" cursor-pointer rounded-full w-60 h-60 md:h-72 md:w-72 " src={logo} alt="" />
+                    <span className="font-bold text-3xl md:text-7xl lg:text-7xl text-[#398ab9]" >Virtual Physics Lab</span>
                 </div>
-                <div className="flex justify-around items-center w-full mt-32">
-                    <Button
-                        type="default"
-                        style={{ width: "150px", height: "40px", fontSize: '1.5em', display: 'flex', justifyContent: 'center', alignItems: 'center', background: 'linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%)' }}
-                        onClick={() => navigate("/home")}
-                    >
-                        Start
-                    </Button>
-                </div>
+                <div className="h-1/2 w-full bg-[#BFD7ED]" ></div>
+                <div className="h-1/2 w-full bg-[#BFD7ED]" ></div>
             </div>
         </>
     )

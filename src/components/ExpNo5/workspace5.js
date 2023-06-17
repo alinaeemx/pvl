@@ -435,12 +435,12 @@ const Workspace5 = (props) => {
     }, []);
 
     return (
-        <>
+        <div className='select-none'>
             {contextHolder}
             <Instructions5 ShowInstructions={ShowInstructions} setShowInstructions={setShowInstructions} />
             <ReactFlowProvider>
                 <div className='flex flex-col justify-start  items-center' >
-                    <aside style={{ width: '100px', backgroundColor: "#F1F1F2", borderColor: 'rgba(0,0,0,0.5)', borderWidth: '1px' }} className='absolute top-32 bottom-32 right-4 shadow-xl z-10 flex flex-col items-center overflow-x-hidden overflow-y-auto rounded-lg' >
+                    <aside style={{ width: '100px', backgroundColor: "#F1F1F2", borderColor: 'rgba(57, 138, 185,0.8)', borderWidth: '2px' }} className='absolute top-32 bottom-32 right-4 shadow-xl z-10 flex flex-col items-center overflow-x-hidden overflow-y-auto rounded-lg' >
                         <ExpSB5 />
                     </aside>
                     <aside
@@ -464,7 +464,7 @@ const Workspace5 = (props) => {
                                 >
                                     <Button
                                         className='shadow'
-                                        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', borderColor: 'rgba(0,0,0,0.5)', borderWidth: '1px', background: '#E3E3E3' }}
+                                        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', borderColor: 'rgba(57, 138, 185,0.8)', borderWidth: '1px', background: '#E3E3E3' }}
                                         icon={Run ? <BsStopFill color='red' size={'30px'} /> : <BsFillPlayFill size={'30px'} color='green' />}
                                         onClick={() => {
                                             if (RunError) {
@@ -482,7 +482,7 @@ const Workspace5 = (props) => {
                                         pathname: '/quiz',
                                         search: `?${createSearchParams({ exp: 4 })}`
                                     })}
-                                    style={{ color: 'white', borderColor: 'rgba(0,0,0,0.5)', borderWidth: '1px', background: '#398ab9' }}
+                                    style={{ color: 'white', borderColor: 'rgba(57, 138, 185,0.8)', borderWidth: '1px', background: 'orange' }}
                                 >
                                     إختبر نفسك !
                                 </Button>
@@ -499,9 +499,9 @@ const Workspace5 = (props) => {
                                     direction: 'rtl',
                                     borderRadius: '8px',
                                     position: 'absolute',
-                                    borderWidth: '0.5px',
+                                    borderWidth: '2px',
                                     background: '#F1F1F2',
-                                    borderColor: 'rgba(0,0,0,0.5)',
+                                    borderColor: 'rgba(57, 138, 185,0.8)',
                                 }}
                             >
                                 {
@@ -635,7 +635,7 @@ const Workspace5 = (props) => {
                             onSelectionChange={(s) => setSelectedItem(s)}
                             connectionLineComponent={CustomConnectionLine}
                         >
-                            <Controls style={{ display: 'flex', flexDirection: 'column-reverse', borderColor: 'rgba(0,0,0,0.4)', borderWidth: '1px', borderRadius: '4px' }} >
+                            <Controls style={{ display: 'flex', flexDirection: 'column-reverse', borderColor: 'rgba(57, 138, 185,0.8)', borderWidth: '2px', borderRadius: '4px' }} >
                                 <ControlButton
                                     onClick={() => setShowInstructions(true)}
                                 >
@@ -665,7 +665,7 @@ const Workspace5 = (props) => {
                     </div>
                 </div>
             </ReactFlowProvider>
-        </>
+        </div>
     )
 }
 

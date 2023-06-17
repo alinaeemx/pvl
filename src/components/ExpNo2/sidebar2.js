@@ -20,7 +20,7 @@ export const ExpSB2 = () => {
 
     return (
         <>
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'مفتاح مزدوج'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'مفتاح مزدوج'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={DSwitch ? `cursor-not-allowed opacity-50 ${sidebarElement} ` : sidebarElement}
@@ -34,7 +34,7 @@ export const ExpSB2 = () => {
                 </div>
             </Tooltip>
 
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'متسعة'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'متسعة'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={Capacitor ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}
@@ -48,7 +48,7 @@ export const ExpSB2 = () => {
                 </div>
             </Tooltip>
 
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'بطارية'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'بطارية'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={DCSource ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}
@@ -62,7 +62,7 @@ export const ExpSB2 = () => {
                 </div>
             </Tooltip>
 
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'مقاومة'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'مقاومة'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={Resistor ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}
@@ -76,7 +76,7 @@ export const ExpSB2 = () => {
                 </div>
             </Tooltip>
 
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'مصباح'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'مصباح'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={Lamp ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}
@@ -90,7 +90,7 @@ export const ExpSB2 = () => {
                 </div>
             </Tooltip>
 
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'كلفانوميتر'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'كلفانوميتر'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={Galvanometer ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}

@@ -3,7 +3,6 @@ import { HiMinus, HiPlus } from "react-icons/hi";
 import React, { useEffect, memo } from 'react';
 import SineWaves from 'sine-waves';
 import { GlobalStore } from '../../../store';
-import "../../../style/canvas.css"
 
 function ACSource({ id, data }) {
     const updateNodeInternals = useUpdateNodeInternals();
@@ -63,8 +62,7 @@ function ACSource({ id, data }) {
                             style={{
                                 width: "100%",
                                 height: '100%',
-                            }}
-                            id="waves"></canvas>
+                            }} id='waves'></canvas>
                     </div>
                     <div
                         className=" flex  justify-around items-center "

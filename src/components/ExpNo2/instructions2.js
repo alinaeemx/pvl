@@ -7,6 +7,7 @@ export const Instructions2 = ({ ShowInstructions, setShowInstructions }) => {
             {
                 ShowInstructions === true ? (
                     <Modal
+                        className='select-none'
                         onCancel={() => setShowInstructions(false)}
                         cancelButtonProps={{ style: { display: 'none' } }}
                         okButtonProps={{ style: { display: 'none' } }}

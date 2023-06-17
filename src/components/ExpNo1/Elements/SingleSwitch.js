@@ -55,7 +55,7 @@ function SingeSwitch({ id, isConnectable, data }) {
                     <Image preview={false} src={switchCueArrow} />
                 </div>
                 <div
-                    style={{ width: "70px" }}
+                    style={{ width: "65px" }}
                     className=" flex items-center justify-center switchKey "
                     onClick={() => {
                         if (Run) {
