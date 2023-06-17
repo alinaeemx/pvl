@@ -1,4 +1,4 @@
-import { Card, Divider, } from 'antd';
+import { Card } from 'antd';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import not from '../assets/not.png';
@@ -40,20 +40,20 @@ const HomePage = () => {
     }
   ]
   return (
-    <div className='w-full h-full p-10 ' >
-      <div className='w-full h-full flex flex-col justify-between items-center md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 md:gap-4 ' >
+    <div className='w-full h-full p-10 select-none ' >
+      <div className='w-full h-full flex flex-wrap gap-5 md:gap-10 lg:gap-32 justify-between items-center ' >
         {
           expList.map((item, i) => {
             return (
               <Card
                 className='borderColor shadow mb-5 md:mb-0'
                 hoverable
-                style={{ width: 300, height: 300, background: '#F1F1F2' }}
-                cover={item.image && <img className='p-1' alt="" src={item.image} />}
+                style={{ width: 300, height: 300, background: '#398ab9',color:'#F1F1F2' }}
+                cover={item.image && <img className='p-[7px]' alt="" src={item.image} />}
                 key={i + 1}
                 onClick={() => { navigate(`/${item.path}`) }}>
-                <Divider />
-                <span>{item.title}</span>
+                {/* <Divider /> */}
+                <span className='font-bold' >{item.title}</span>
               </Card>
             )
           })

@@ -123,17 +123,17 @@ function Capacitor({ id, data }) {
                     <Image preview={false} src={switchCueArrow} />
                 </div>
                 <div
-                    style={{ width: "75px" }}
+                    style={{ width: "65px" }}
                     className=" flex items-center justify-center "
                 >
                     <Handle
                         id='cS'
-                        style={{ background: 'red', marginRight: '5.5px', borderColor: 'red', height: 7, width: 7 }}
+                        style={{ background: 'red', marginRight: '5.7px', borderColor: 'red', height: 6, width: 6 }}
                         className=" z-50 " type="source" position="right" />
 
                     <Handle
                         id="cT"
-                        style={{ background: 'blue', marginLeft: '8.4px', marginTop: '0.2px', borderColor: 'blue', height: 7, width: 7 }}
+                        style={{ background: 'blue', marginLeft: '8px', marginTop: '0.2px', borderColor: 'blue', height: 6, width: 6 }}
                         className=" z-50 " type="target" position="left" />
 
                     <div className="absolute z-10 " >

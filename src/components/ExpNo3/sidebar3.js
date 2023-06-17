@@ -19,7 +19,7 @@ export const ExpSB3 = () => {
 
     return (
         <>
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'مفتاح'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'مفتاح'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={SingeSwitch ? `cursor-not-allowed opacity-50 ${sidebarElement} ` : sidebarElement}
@@ -32,7 +32,7 @@ export const ExpSB3 = () => {
                     <span className="mt-1" >Switch</span>
                 </div>
             </Tooltip>
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'ملف'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'ملف'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={Inductor ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}
@@ -45,7 +45,7 @@ export const ExpSB3 = () => {
                     <span className="mt-1" >Inductor</span>
                 </div>
             </Tooltip>
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'مذبذب كهربائي'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'مذبذب كهربائي'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={ACSource ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}
@@ -58,7 +58,7 @@ export const ExpSB3 = () => {
                     <span className="mt-1" >ACSource</span>
                 </div>
             </Tooltip>
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'اميتير'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'اميتير'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={Ammeter ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}
@@ -71,7 +71,7 @@ export const ExpSB3 = () => {
                     <span className="mt-1" >Ammeter</span>
                 </div>
             </Tooltip>
-            <Tooltip color={'rgba(0,0,0,0.5)'} placement='left' title={'فولتميتر'} >
+            <Tooltip color={'rgba(57, 138, 185,0.8)'} placement='left' title={'فولتميتر'} >
                 <div
                     style={{ marginBottom: '30px', marginTop: '30px' }}
                     className={Voltmeter ? `cursor-not-allowed opacity-50 ${sidebarElement}` : sidebarElement}

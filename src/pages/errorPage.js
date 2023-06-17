@@ -19,7 +19,7 @@ const ErrorPage = () => {
         return <LoadingSpin />
 
     return (
-        <div>
+        <div className='select-none' >
             <Result
                 status="404"
                 title={<span >404</span>}
